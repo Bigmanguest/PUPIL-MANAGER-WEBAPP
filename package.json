@@ -1,0 +1,38 @@
+{
+  "name": "pupil-manager-webapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "browserslist": [
+    "last 3 Chrome versions",
+    "Firefox 63",
+    "Node 11"
+  ],
+  "scripts": {
+    "start": "parcel src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bigmanguest/PUPIL-MANAGER-WEBAPP.git"
+  },
+  "author": "Bigmanguest",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Bigmanguest/PUPIL-MANAGER-WEBAPP/issues"
+  },
+  "homepage": "https://github.com/Bigmanguest/PUPIL-MANAGER-WEBAPP#readme",
+  "dependencies": {
+    "@mdi/font": "^5.8.55",
+    "parcel": "^1.12.4",
+    "vue": "^2.6.12",
+    "vue-hot-reload-api": "^2.3.4",
+    "vue-router": "^3.4.9",
+    "vuetify": "^2.4.1",
+    "vuex": "^3.6.0"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.2.0",
+    "vue-template-compiler": "^2.6.12"
+  }
+}
