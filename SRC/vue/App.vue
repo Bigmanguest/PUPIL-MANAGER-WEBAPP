@@ -39,7 +39,8 @@
                 hasPermission: false,
                 cards: {
                     "04:4c:1c:3a:c1:62:80": {
-                        name: "Tom Wilson"
+                        name: "Tom Wilson",
+                        lastused: null
                     }
                 }
             }
@@ -56,6 +57,12 @@
                         // TODO: Handle incoming NDEF messages.
                         if(this.cards.hasOwnProperty(event.serialNumber)) {
                             alert(`You are: ${this.cards[event.serialNumber].name}`);
+                            if (this.cards[event.serialNumber].lastused){
+                                alert(`lastused: ${new Date(this.cards[event.serialNumber].lastused).toTimeString()}`);
+                            } else {
+                                alert("not yet used today")
+                            }
+                            this.cards[event.serialNumber].lastused = Date.now();
                         } else {
                             alert(`You are unknown to the system...`);
                         }
